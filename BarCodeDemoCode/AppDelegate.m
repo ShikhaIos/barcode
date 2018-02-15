@@ -1,9 +1,9 @@
 //
 //  AppDelegate.m
-//  BarCodeDemoCode
+//  BarCode Demo
 //
-//  Created by shikha  on 15/02/18.
-//  Copyright © 2018 shikha . All rights reserved.
+//  Created by Shikha Singla on 2/14/18.
+//  Copyright © 2018 Shikha Singla. All rights reserved.
 //
 
 #import "AppDelegate.h"
@@ -12,11 +12,11 @@
 
 @end
 
-@implementation AppDelegate
-
+@implementation AppDelegate 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [SBSLicense setAppKey: @"AWSrUgVQHhQ/Ip+PWQYlLXInQkDtGo073mb0X2JheBUFJ4IgFRIzUWZ/mbQCc12sVgrjH10FpSv1N1jW21Gxabt5uLWGe9Gtqx8iF5RdfET9aswtJh3m/21iqRVZsR38wyyVpXeh9XP4ml7f0+rHL7Y1V0CamxFZRhxEvB4e4On64VXBvq0Ic5byKStDiL6RzIlqFbdIkr3ldEg4G1xYprOSgkJcvN0NVvTjEyVHbxNvpAHBb/urVqQKG31gXGjW1HelQyykQItMamcy6Rg428QiUDuab0CzrrkeyozV0YaubJncNEy14tCTsuTNyByYqqkKRkGiWf4ZGhupqfg0TEmdyHRrl0jK0YwUZ40Bm7zdG4UEHfjIkRrwqhxo/aYMEJQSeg0lv9aMKlx8V3kOGw2FBGDabocsuXSI7yHYEBu1gQ6+YS218NVVvohZCsZPNxbke6Yp6WXTgWAOf18tYwFVuWQC5/EjXQhgR6GTlf9aBzybFJPAsIO4FvYC4+h4nopc3W4tMOjJyRsm4dz9ucSYnPfOSKKaGfh97iLMhGknqWaF3QSA9ayy6/s5P/aykjn/oCxwIQYmat2kr+SqMtAkHaMec0PoiI31b6oO0KpbBGS2vfBW5680vpegSw2olrRGbk+Mcu1PIBwEA2qyUxPOFkPHB7G3y0Q5pUhbmbadTbhcNZUrTdF7zSziroIzW2+ltPM2xTSaKpfjFyeKmct4sGfMTTyCUSOGryHOYSVbLnAgGekzqHKdwoAkUxmngtFaY5TG+gVK2h/gClrKwknK0rERgq/r"];
     return YES;
 }
 
@@ -45,7 +45,54 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    // Saves changes in the application's managed object context before the application terminates.
+    [self saveContext];
 }
 
+
+#pragma mark - Core Data stack
+
+@synthesize persistentContainer = _persistentContainer;
+
+- (NSPersistentContainer *)persistentContainer {
+    // The persistent container for the application. This implementation creates and returns a container, having loaded the store for the application to it.
+    @synchronized (self) {
+        if (_persistentContainer == nil) {
+            _persistentContainer = [[NSPersistentContainer alloc] initWithName:@"BarCode_Demo"];
+            [_persistentContainer loadPersistentStoresWithCompletionHandler:^(NSPersistentStoreDescription *storeDescription, NSError *error) {
+                if (error != nil) {
+                    // Replace this implementation with code to handle the error appropriately.
+                    // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
+                    
+                    /*
+                     Typical reasons for an error here include:
+                     * The parent directory does not exist, cannot be created, or disallows writing.
+                     * The persistent store is not accessible, due to permissions or data protection when the device is locked.
+                     * The device is out of space.
+                     * The store could not be migrated to the current model version.
+                     Check the error message to determine what the actual problem was.
+                    */
+                    NSLog(@"Unresolved error %@, %@", error, error.userInfo);
+                    abort();
+                }
+            }];
+        }
+    }
+    
+    return _persistentContainer;
+}
+
+#pragma mark - Core Data Saving support
+
+- (void)saveContext {
+    NSManagedObjectContext *context = self.persistentContainer.viewContext;
+    NSError *error = nil;
+    if ([context hasChanges] && ![context save:&error]) {
+        // Replace this implementation with code to handle the error appropriately.
+        // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
+        NSLog(@"Unresolved error %@, %@", error, error.userInfo);
+        abort();
+    }
+}
 
 @end

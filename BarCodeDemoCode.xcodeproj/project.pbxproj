@@ -15,6 +15,23 @@
 		A76B74F22035780A00FB1228 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A76B74F12035780A00FB1228 /* main.m */; };
 		A76B74FC2035780A00FB1228 /* BarCodeDemoCodeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A76B74FB2035780A00FB1228 /* BarCodeDemoCodeTests.m */; };
 		A76B75072035780A00FB1228 /* BarCodeDemoCodeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A76B75062035780A00FB1228 /* BarCodeDemoCodeUITests.m */; };
+		A76B75182035790400FB1228 /* Webservice.m in Sources */ = {isa = PBXBuildFile; fileRef = A76B75142035790400FB1228 /* Webservice.m */; };
+		A76B75192035790400FB1228 /* Modal.m in Sources */ = {isa = PBXBuildFile; fileRef = A76B75162035790400FB1228 /* Modal.m */; };
+		A76B751B2035793000FB1228 /* ScanditBarcodeScanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A76B751A2035793000FB1228 /* ScanditBarcodeScanner.framework */; };
+		A76B751E2035796000FB1228 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A76B751D2035796000FB1228 /* MediaPlayer.framework */; };
+		A76B75202035797300FB1228 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A76B751F2035797300FB1228 /* Accelerate.framework */; };
+		A76B75222035797F00FB1228 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A76B75212035797F00FB1228 /* CoreText.framework */; };
+		A76B75252035799800FB1228 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A76B75232035799700FB1228 /* CoreMedia.framework */; };
+		A76B75262035799800FB1228 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A76B75242035799800FB1228 /* CoreLocation.framework */; };
+		A76B7528203579A100FB1228 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A76B7527203579A100FB1228 /* Foundation.framework */; };
+		A76B752A203579AB00FB1228 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A76B7529203579AB00FB1228 /* AVFoundation.framework */; };
+		A76B752C203579C000FB1228 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A76B752B203579C000FB1228 /* SystemConfiguration.framework */; };
+		A76B752E203579CD00FB1228 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A76B752D203579CD00FB1228 /* libc++.tbd */; };
+		A76B7530203579D700FB1228 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A76B752F203579D700FB1228 /* libz.tbd */; };
+		A76B7532203579E200FB1228 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A76B7531203579E200FB1228 /* libiconv.tbd */; };
+		A76B7534203579EB00FB1228 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A76B7533203579EB00FB1228 /* OpenGLES.framework */; };
+		A76B753720357A5500FB1228 /* ResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A76B753620357A5500FB1228 /* ResultViewController.m */; };
+		A76B753A20357A9A00FB1228 /* WebServicesResultModal.m in Sources */ = {isa = PBXBuildFile; fileRef = A76B753920357A9A00FB1228 /* WebServicesResultModal.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +68,27 @@
 		A76B75022035780A00FB1228 /* BarCodeDemoCodeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BarCodeDemoCodeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A76B75062035780A00FB1228 /* BarCodeDemoCodeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BarCodeDemoCodeUITests.m; sourceTree = "<group>"; };
 		A76B75082035780A00FB1228 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A76B75142035790400FB1228 /* Webservice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Webservice.m; sourceTree = "<group>"; };
+		A76B75152035790400FB1228 /* Webservice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Webservice.h; sourceTree = "<group>"; };
+		A76B75162035790400FB1228 /* Modal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Modal.m; sourceTree = "<group>"; };
+		A76B75172035790400FB1228 /* Modal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Modal.h; sourceTree = "<group>"; };
+		A76B751A2035793000FB1228 /* ScanditBarcodeScanner.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ScanditBarcodeScanner.framework; sourceTree = "<group>"; };
+		A76B751D2035796000FB1228 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		A76B751F2035797300FB1228 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		A76B75212035797F00FB1228 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		A76B75232035799700FB1228 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		A76B75242035799800FB1228 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		A76B7527203579A100FB1228 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A76B7529203579AB00FB1228 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		A76B752B203579C000FB1228 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		A76B752D203579CD00FB1228 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		A76B752F203579D700FB1228 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		A76B7531203579E200FB1228 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		A76B7533203579EB00FB1228 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		A76B753520357A5500FB1228 /* ResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultViewController.h; sourceTree = "<group>"; };
+		A76B753620357A5500FB1228 /* ResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultViewController.m; sourceTree = "<group>"; };
+		A76B753820357A9A00FB1228 /* WebServicesResultModal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebServicesResultModal.h; sourceTree = "<group>"; };
+		A76B753920357A9A00FB1228 /* WebServicesResultModal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebServicesResultModal.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +96,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A76B7534203579EB00FB1228 /* OpenGLES.framework in Frameworks */,
+				A76B7532203579E200FB1228 /* libiconv.tbd in Frameworks */,
+				A76B7530203579D700FB1228 /* libz.tbd in Frameworks */,
+				A76B752E203579CD00FB1228 /* libc++.tbd in Frameworks */,
+				A76B752C203579C000FB1228 /* SystemConfiguration.framework in Frameworks */,
+				A76B75262035799800FB1228 /* CoreLocation.framework in Frameworks */,
+				A76B752A203579AB00FB1228 /* AVFoundation.framework in Frameworks */,
+				A76B7528203579A100FB1228 /* Foundation.framework in Frameworks */,
+				A76B75252035799800FB1228 /* CoreMedia.framework in Frameworks */,
+				A76B75222035797F00FB1228 /* CoreText.framework in Frameworks */,
+				A76B75202035797300FB1228 /* Accelerate.framework in Frameworks */,
+				A76B751E2035796000FB1228 /* MediaPlayer.framework in Frameworks */,
+				A76B751B2035793000FB1228 /* ScanditBarcodeScanner.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,10 +132,12 @@
 		A76B74D62035780A00FB1228 = {
 			isa = PBXGroup;
 			children = (
+				A76B751A2035793000FB1228 /* ScanditBarcodeScanner.framework */,
 				A76B74E12035780A00FB1228 /* BarCodeDemoCode */,
 				A76B74FA2035780A00FB1228 /* BarCodeDemoCodeTests */,
 				A76B75052035780A00FB1228 /* BarCodeDemoCodeUITests */,
 				A76B74E02035780A00FB1228 /* Products */,
+				A76B751C2035795F00FB1228 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +154,14 @@
 		A76B74E12035780A00FB1228 /* BarCodeDemoCode */ = {
 			isa = PBXGroup;
 			children = (
+				A76B753820357A9A00FB1228 /* WebServicesResultModal.h */,
+				A76B753920357A9A00FB1228 /* WebServicesResultModal.m */,
+				A76B753520357A5500FB1228 /* ResultViewController.h */,
+				A76B753620357A5500FB1228 /* ResultViewController.m */,
+				A76B75172035790400FB1228 /* Modal.h */,
+				A76B75162035790400FB1228 /* Modal.m */,
+				A76B75152035790400FB1228 /* Webservice.h */,
+				A76B75142035790400FB1228 /* Webservice.m */,
 				A76B74E22035780A00FB1228 /* AppDelegate.h */,
 				A76B74E32035780A00FB1228 /* AppDelegate.m */,
 				A76B74E52035780A00FB1228 /* ViewController.h */,
@@ -130,6 +191,25 @@
 				A76B75082035780A00FB1228 /* Info.plist */,
 			);
 			path = BarCodeDemoCodeUITests;
+			sourceTree = "<group>";
+		};
+		A76B751C2035795F00FB1228 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A76B7533203579EB00FB1228 /* OpenGLES.framework */,
+				A76B7531203579E200FB1228 /* libiconv.tbd */,
+				A76B752F203579D700FB1228 /* libz.tbd */,
+				A76B752D203579CD00FB1228 /* libc++.tbd */,
+				A76B752B203579C000FB1228 /* SystemConfiguration.framework */,
+				A76B7529203579AB00FB1228 /* AVFoundation.framework */,
+				A76B7527203579A100FB1228 /* Foundation.framework */,
+				A76B75242035799800FB1228 /* CoreLocation.framework */,
+				A76B75232035799700FB1228 /* CoreMedia.framework */,
+				A76B75212035797F00FB1228 /* CoreText.framework */,
+				A76B751F2035797300FB1228 /* Accelerate.framework */,
+				A76B751D2035796000FB1228 /* MediaPlayer.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,8 +346,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A76B74E72035780A00FB1228 /* ViewController.m in Sources */,
+				A76B75192035790400FB1228 /* Modal.m in Sources */,
 				A76B74F22035780A00FB1228 /* main.m in Sources */,
+				A76B753A20357A9A00FB1228 /* WebServicesResultModal.m in Sources */,
+				A76B75182035790400FB1228 /* Webservice.m in Sources */,
 				A76B74E42035780A00FB1228 /* AppDelegate.m in Sources */,
+				A76B753720357A5500FB1228 /* ResultViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,9 +515,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = BarCodeDemoCode/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.a1distribute.BarCodeDemoCode;
+				PRODUCT_BUNDLE_IDENTIFIER = com.barcode.id;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -444,9 +532,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = BarCodeDemoCode/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.a1distribute.BarCodeDemoCode;
+				PRODUCT_BUNDLE_IDENTIFIER = com.barcode.id;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
