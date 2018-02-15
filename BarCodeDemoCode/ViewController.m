@@ -28,6 +28,8 @@
     // Do any additional setup after loading the view, typically from a nib.
     
 }
+#pragma mark - WebServiceClassDelegate
+
 -(void) didReceiveData:(Modal *)values
 {
     UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"Main"
@@ -55,10 +57,13 @@
         [self showAlert:@"Here is problem" withMessage:error];
     });
 }
-//NOTE :- BUtton Actions
+
+
+#pragma mark - ButtonActions
+
 - (IBAction)btnManuallyEnterBarCodeScan_Action:(id)sender {
     if (self.textfldData.text.length == 0) {
-      [self showAlert:@"Problem" withMessage:@"please enter some value"];
+        [self showAlert:@"Problem" withMessage:@"please enter some value"];
     } else {
         Webservice *obj = [[Webservice alloc]init];
         obj.delegate = self;
@@ -66,6 +71,7 @@
         
     }
 }
+
 - (IBAction)btnSubmitAction:(id)sender {
     
     Webservice *obj = [[Webservice alloc]init];
