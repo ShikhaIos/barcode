@@ -4,6 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -18,7 +19,7 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" alpha="0.75" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -42,7 +43,7 @@
                                     <action selector="btnManuallyEnterBarCodeScan_Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="coX-5D-5oo"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t8B-HY-DQD">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Barcode" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t8B-HY-DQD">
                                 <rect key="frame" x="77" y="99" width="221" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="lkb-Ar-8jJ"/>
@@ -67,7 +68,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="t8B-HY-DQD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="9v8-Im-eQw"/>
                             <constraint firstItem="M88-Xa-aEe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="WOM-my-2wj"/>
@@ -92,7 +93,7 @@
         <scene sceneID="nSF-BU-e7R">
             <objects>
                 <viewController storyboardIdentifier="ResultViewController" id="6u0-3y-GnP" customClass="ResultViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="e9I-de-jfR">
+                    <view key="view" alpha="0.75" contentMode="scaleToFill" id="e9I-de-jfR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -138,7 +139,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="VUK-JP-MlJ" firstAttribute="height" secondItem="uS8-Mo-I9Q" secondAttribute="height" id="3eL-rZ-zRm"/>
                             <constraint firstItem="LnK-Xq-5zI" firstAttribute="width" secondItem="axq-Za-XI4" secondAttribute="width" id="7Fw-Sv-fFx"/>
