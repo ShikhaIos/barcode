@@ -28,6 +28,11 @@
     // Do any additional setup after loading the view, typically from a nib.
     
 }
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+    
+}
 #pragma mark - WebServiceClassDelegate
 
 -(void) didReceiveData:(Modal *)values
@@ -152,11 +157,10 @@
     [self presentViewController: controller animated: YES completion: nil];
     
 }
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-    
-}
+
+
+#pragma mark - textfieldDelegateMethod
+
 - (BOOL)textFieldShouldReturn:(UITextField *)textField{
     self.textfldData.resignFirstResponder;
     return true;
