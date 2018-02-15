@@ -1,0 +1,551 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A76B74E42035780A00FB1228 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A76B74E32035780A00FB1228 /* AppDelegate.m */; };
+		A76B74E72035780A00FB1228 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A76B74E62035780A00FB1228 /* ViewController.m */; };
+		A76B74EA2035780A00FB1228 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A76B74E82035780A00FB1228 /* Main.storyboard */; };
+		A76B74EC2035780A00FB1228 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A76B74EB2035780A00FB1228 /* Assets.xcassets */; };
+		A76B74EF2035780A00FB1228 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A76B74ED2035780A00FB1228 /* LaunchScreen.storyboard */; };
+		A76B74F22035780A00FB1228 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A76B74F12035780A00FB1228 /* main.m */; };
+		A76B74FC2035780A00FB1228 /* BarCodeDemoCodeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A76B74FB2035780A00FB1228 /* BarCodeDemoCodeTests.m */; };
+		A76B75072035780A00FB1228 /* BarCodeDemoCodeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A76B75062035780A00FB1228 /* BarCodeDemoCodeUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A76B74F82035780A00FB1228 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A76B74D72035780A00FB1228 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A76B74DE2035780A00FB1228;
+			remoteInfo = BarCodeDemoCode;
+		};
+		A76B75032035780A00FB1228 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A76B74D72035780A00FB1228 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A76B74DE2035780A00FB1228;
+			remoteInfo = BarCodeDemoCode;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A76B74DF2035780A00FB1228 /* BarCodeDemoCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BarCodeDemoCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A76B74E22035780A00FB1228 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A76B74E32035780A00FB1228 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A76B74E52035780A00FB1228 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A76B74E62035780A00FB1228 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A76B74E92035780A00FB1228 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A76B74EB2035780A00FB1228 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A76B74EE2035780A00FB1228 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A76B74F02035780A00FB1228 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A76B74F12035780A00FB1228 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A76B74F72035780A00FB1228 /* BarCodeDemoCodeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BarCodeDemoCodeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A76B74FB2035780A00FB1228 /* BarCodeDemoCodeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BarCodeDemoCodeTests.m; sourceTree = "<group>"; };
+		A76B74FD2035780A00FB1228 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A76B75022035780A00FB1228 /* BarCodeDemoCodeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BarCodeDemoCodeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A76B75062035780A00FB1228 /* BarCodeDemoCodeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BarCodeDemoCodeUITests.m; sourceTree = "<group>"; };
+		A76B75082035780A00FB1228 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A76B74DC2035780A00FB1228 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A76B74F42035780A00FB1228 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A76B74FF2035780A00FB1228 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A76B74D62035780A00FB1228 = {
+			isa = PBXGroup;
+			children = (
+				A76B74E12035780A00FB1228 /* BarCodeDemoCode */,
+				A76B74FA2035780A00FB1228 /* BarCodeDemoCodeTests */,
+				A76B75052035780A00FB1228 /* BarCodeDemoCodeUITests */,
+				A76B74E02035780A00FB1228 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A76B74E02035780A00FB1228 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A76B74DF2035780A00FB1228 /* BarCodeDemoCode.app */,
+				A76B74F72035780A00FB1228 /* BarCodeDemoCodeTests.xctest */,
+				A76B75022035780A00FB1228 /* BarCodeDemoCodeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A76B74E12035780A00FB1228 /* BarCodeDemoCode */ = {
+			isa = PBXGroup;
+			children = (
+				A76B74E22035780A00FB1228 /* AppDelegate.h */,
+				A76B74E32035780A00FB1228 /* AppDelegate.m */,
+				A76B74E52035780A00FB1228 /* ViewController.h */,
+				A76B74E62035780A00FB1228 /* ViewController.m */,
+				A76B74E82035780A00FB1228 /* Main.storyboard */,
+				A76B74EB2035780A00FB1228 /* Assets.xcassets */,
+				A76B74ED2035780A00FB1228 /* LaunchScreen.storyboard */,
+				A76B74F02035780A00FB1228 /* Info.plist */,
+				A76B74F12035780A00FB1228 /* main.m */,
+			);
+			path = BarCodeDemoCode;
+			sourceTree = "<group>";
+		};
+		A76B74FA2035780A00FB1228 /* BarCodeDemoCodeTests */ = {
+			isa = PBXGroup;
+			children = (
+				A76B74FB2035780A00FB1228 /* BarCodeDemoCodeTests.m */,
+				A76B74FD2035780A00FB1228 /* Info.plist */,
+			);
+			path = BarCodeDemoCodeTests;
+			sourceTree = "<group>";
+		};
+		A76B75052035780A00FB1228 /* BarCodeDemoCodeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A76B75062035780A00FB1228 /* BarCodeDemoCodeUITests.m */,
+				A76B75082035780A00FB1228 /* Info.plist */,
+			);
+			path = BarCodeDemoCodeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A76B74DE2035780A00FB1228 /* BarCodeDemoCode */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A76B750B2035780A00FB1228 /* Build configuration list for PBXNativeTarget "BarCodeDemoCode" */;
+			buildPhases = (
+				A76B74DB2035780A00FB1228 /* Sources */,
+				A76B74DC2035780A00FB1228 /* Frameworks */,
+				A76B74DD2035780A00FB1228 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BarCodeDemoCode;
+			productName = BarCodeDemoCode;
+			productReference = A76B74DF2035780A00FB1228 /* BarCodeDemoCode.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A76B74F62035780A00FB1228 /* BarCodeDemoCodeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A76B750E2035780A00FB1228 /* Build configuration list for PBXNativeTarget "BarCodeDemoCodeTests" */;
+			buildPhases = (
+				A76B74F32035780A00FB1228 /* Sources */,
+				A76B74F42035780A00FB1228 /* Frameworks */,
+				A76B74F52035780A00FB1228 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A76B74F92035780A00FB1228 /* PBXTargetDependency */,
+			);
+			name = BarCodeDemoCodeTests;
+			productName = BarCodeDemoCodeTests;
+			productReference = A76B74F72035780A00FB1228 /* BarCodeDemoCodeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A76B75012035780A00FB1228 /* BarCodeDemoCodeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A76B75112035780A00FB1228 /* Build configuration list for PBXNativeTarget "BarCodeDemoCodeUITests" */;
+			buildPhases = (
+				A76B74FE2035780A00FB1228 /* Sources */,
+				A76B74FF2035780A00FB1228 /* Frameworks */,
+				A76B75002035780A00FB1228 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A76B75042035780A00FB1228 /* PBXTargetDependency */,
+			);
+			name = BarCodeDemoCodeUITests;
+			productName = BarCodeDemoCodeUITests;
+			productReference = A76B75022035780A00FB1228 /* BarCodeDemoCodeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A76B74D72035780A00FB1228 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "shikha ";
+				TargetAttributes = {
+					A76B74DE2035780A00FB1228 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					A76B74F62035780A00FB1228 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A76B74DE2035780A00FB1228;
+					};
+					A76B75012035780A00FB1228 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A76B74DE2035780A00FB1228;
+					};
+				};
+			};
+			buildConfigurationList = A76B74DA2035780A00FB1228 /* Build configuration list for PBXProject "BarCodeDemoCode" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A76B74D62035780A00FB1228;
+			productRefGroup = A76B74E02035780A00FB1228 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A76B74DE2035780A00FB1228 /* BarCodeDemoCode */,
+				A76B74F62035780A00FB1228 /* BarCodeDemoCodeTests */,
+				A76B75012035780A00FB1228 /* BarCodeDemoCodeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A76B74DD2035780A00FB1228 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A76B74EF2035780A00FB1228 /* LaunchScreen.storyboard in Resources */,
+				A76B74EC2035780A00FB1228 /* Assets.xcassets in Resources */,
+				A76B74EA2035780A00FB1228 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A76B74F52035780A00FB1228 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A76B75002035780A00FB1228 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A76B74DB2035780A00FB1228 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A76B74E72035780A00FB1228 /* ViewController.m in Sources */,
+				A76B74F22035780A00FB1228 /* main.m in Sources */,
+				A76B74E42035780A00FB1228 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A76B74F32035780A00FB1228 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A76B74FC2035780A00FB1228 /* BarCodeDemoCodeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A76B74FE2035780A00FB1228 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A76B75072035780A00FB1228 /* BarCodeDemoCodeUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A76B74F92035780A00FB1228 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A76B74DE2035780A00FB1228 /* BarCodeDemoCode */;
+			targetProxy = A76B74F82035780A00FB1228 /* PBXContainerItemProxy */;
+		};
+		A76B75042035780A00FB1228 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A76B74DE2035780A00FB1228 /* BarCodeDemoCode */;
+			targetProxy = A76B75032035780A00FB1228 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A76B74E82035780A00FB1228 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A76B74E92035780A00FB1228 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A76B74ED2035780A00FB1228 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A76B74EE2035780A00FB1228 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A76B75092035780A00FB1228 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A76B750A2035780A00FB1228 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A76B750C2035780A00FB1228 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BarCodeDemoCode/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.a1distribute.BarCodeDemoCode;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A76B750D2035780A00FB1228 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BarCodeDemoCode/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.a1distribute.BarCodeDemoCode;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A76B750F2035780A00FB1228 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BarCodeDemoCodeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.a1distribute.BarCodeDemoCodeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BarCodeDemoCode.app/BarCodeDemoCode";
+			};
+			name = Debug;
+		};
+		A76B75102035780A00FB1228 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BarCodeDemoCodeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.a1distribute.BarCodeDemoCodeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BarCodeDemoCode.app/BarCodeDemoCode";
+			};
+			name = Release;
+		};
+		A76B75122035780A00FB1228 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BarCodeDemoCodeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.a1distribute.BarCodeDemoCodeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BarCodeDemoCode;
+			};
+			name = Debug;
+		};
+		A76B75132035780A00FB1228 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BarCodeDemoCodeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.a1distribute.BarCodeDemoCodeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BarCodeDemoCode;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A76B74DA2035780A00FB1228 /* Build configuration list for PBXProject "BarCodeDemoCode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A76B75092035780A00FB1228 /* Debug */,
+				A76B750A2035780A00FB1228 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A76B750B2035780A00FB1228 /* Build configuration list for PBXNativeTarget "BarCodeDemoCode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A76B750C2035780A00FB1228 /* Debug */,
+				A76B750D2035780A00FB1228 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A76B750E2035780A00FB1228 /* Build configuration list for PBXNativeTarget "BarCodeDemoCodeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A76B750F2035780A00FB1228 /* Debug */,
+				A76B75102035780A00FB1228 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A76B75112035780A00FB1228 /* Build configuration list for PBXNativeTarget "BarCodeDemoCodeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A76B75122035780A00FB1228 /* Debug */,
+				A76B75132035780A00FB1228 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A76B74D72035780A00FB1228 /* Project object */;
+}
