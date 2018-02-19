@@ -21,6 +21,7 @@
 @end
 
 @implementation ViewController
+#pragma mark - ViewLifeCycle
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -66,6 +67,7 @@
 #pragma mark - ButtonActions
 
 - (IBAction)btnManuallyEnterBarCodeScan_Action:(id)sender {
+    [self.view endEditing:YES];
     if (self.textfldData.text.length == 0) {
         [self showAlert:@"Problem" withMessage:@"please enter some value"];
     } else {
@@ -77,11 +79,14 @@
 }
 
 - (IBAction)btnSubmitAction:(id)sender {
-    
-    Webservice *obj = [[Webservice alloc]init];
-    obj.delegate = self;
-    [obj getData:self.textfldData.text];
-    
+    [self.view endEditing:YES];
+    if (self.textfldData.text.length == 0) {
+        [self showAlert:@"Problem" withMessage:@"please enter some value"];
+    } else {
+        Webservice *obj = [[Webservice alloc]init];
+        obj.delegate = self;
+        [obj getData:self.textfldData.text];
+    }
 }
 
 - (IBAction)buttonScanCode_Action:(UIButton *)sender {
@@ -102,25 +107,16 @@
     SBSSymbologySettings *symSettings = [settings settingsForSymbology:SBSSymbologyCode39];
     symSettings.activeSymbolCounts =
     [NSSet setWithObjects:@7, @8, @9, @10, @11, @12, @13, @14, @15, @16, @17, @18, @19, @20, nil];
-    // Initialize the barcode picker - make sure you set the app key above
     self.picker = [[SBSBarcodePicker alloc] initWithSettings:settings];
-    // hidden, even if they have a front camera.
     [self.picker.overlayController setCameraSwitchVisibility:SBSCameraSwitchVisibilityOnTablet];
-    // set the allowed interface orientations. The value UIInterfaceOrientationMaskAll is the
-    // default and is only shown here for completeness.
     [self.picker setAllowedInterfaceOrientations:UIInterfaceOrientationMaskAll];
-    // Set the delegate to receive scan event callbacks
     self.picker.scanDelegate = self;
-    // Open the camera and start scanning barcodes
     [self.picker startScanning];
     [self presentViewController:self.picker animated:YES completion:nil];
 }
 
-
-// NOTE :- SBSBarcodePicker
-
+#pragma mark - SBSBarCodeScannerDelegate
 - (void)barcodePicker:(SBSBarcodePicker *)thePicker didScan:(SBSScanSession *)session {
-    
     [session stopScanning];
     SBSCode *code = [session.newlyRecognizedCodes objectAtIndex:0];
     dispatch_async(dispatch_get_main_queue(), ^{
@@ -147,7 +143,8 @@
     
     UIAlertAction *dismissAction = [UIAlertAction actionWithTitle:@"Dismiss"
                                                             style:UIAlertActionStyleDestructive handler:^(UIAlertAction * action) {
-                                                               // [self dismissViewControllerAnimated:YES completion:nil];
+                                                                self.textfldData.text = @ "";
+                                                                
                                                             }];
     
     //Add dismiss button to alert

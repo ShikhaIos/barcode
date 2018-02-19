@@ -154,19 +154,12 @@
 		A76B74E12035780A00FB1228 /* BarCodeDemoCode */ = {
 			isa = PBXGroup;
 			children = (
-				A76B753820357A9A00FB1228 /* WebServicesResultModal.h */,
-				A76B753920357A9A00FB1228 /* WebServicesResultModal.m */,
-				A76B753520357A5500FB1228 /* ResultViewController.h */,
-				A76B753620357A5500FB1228 /* ResultViewController.m */,
-				A76B75172035790400FB1228 /* Modal.h */,
-				A76B75162035790400FB1228 /* Modal.m */,
-				A76B75152035790400FB1228 /* Webservice.h */,
-				A76B75142035790400FB1228 /* Webservice.m */,
 				A76B74E22035780A00FB1228 /* AppDelegate.h */,
 				A76B74E32035780A00FB1228 /* AppDelegate.m */,
-				A76B74E52035780A00FB1228 /* ViewController.h */,
-				A76B74E62035780A00FB1228 /* ViewController.m */,
-				A76B74E82035780A00FB1228 /* Main.storyboard */,
+				A7D5C1D2203B649900FCE61B /* WebservicesClass */,
+				A7D5C1D1203B648A00FCE61B /* View */,
+				A7D5C1D0203B646200FCE61B /* Controllers */,
+				A7D5C1CF203B643400FCE61B /* Modal */,
 				A76B74EB2035780A00FB1228 /* Assets.xcassets */,
 				A76B74ED2035780A00FB1228 /* LaunchScreen.storyboard */,
 				A76B74F02035780A00FB1228 /* Info.plist */,
@@ -210,6 +203,45 @@
 				A76B751D2035796000FB1228 /* MediaPlayer.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A7D5C1CF203B643400FCE61B /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				A76B753820357A9A00FB1228 /* WebServicesResultModal.h */,
+				A76B753920357A9A00FB1228 /* WebServicesResultModal.m */,
+				A76B75172035790400FB1228 /* Modal.h */,
+				A76B75162035790400FB1228 /* Modal.m */,
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		A7D5C1D0203B646200FCE61B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A76B74E52035780A00FB1228 /* ViewController.h */,
+				A76B74E62035780A00FB1228 /* ViewController.m */,
+				A76B753520357A5500FB1228 /* ResultViewController.h */,
+				A76B753620357A5500FB1228 /* ResultViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A7D5C1D1203B648A00FCE61B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A76B74E82035780A00FB1228 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A7D5C1D2203B649900FCE61B /* WebservicesClass */ = {
+			isa = PBXGroup;
+			children = (
+				A76B75152035790400FB1228 /* Webservice.h */,
+				A76B75142035790400FB1228 /* Webservice.m */,
+			);
+			path = WebservicesClass;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

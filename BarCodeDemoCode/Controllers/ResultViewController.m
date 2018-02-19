@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.labelTitle.text = [NSString stringWithFormat:@"%@",self.ResultModal.title];
+    self.labelTitle.text = [NSString stringWithFormat:@"Title: %@",self.ResultModal.title];
     self.labelBrand.text = [NSString stringWithFormat:@"Brand: %@",self.ResultModal.brand];
     self.labelEan.text = [NSString stringWithFormat:@"Serial Number: %@",self.ResultModal.elid];
     self.labelElid.text = [NSString stringWithFormat:@"EAN: %@",self.ResultModal.ean];
@@ -24,7 +24,7 @@
     // Do any additional setup after loading the view.
 }
 - (IBAction)backButtonPressed:(UIButton *)sender {
-    
+
     UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"Main"
                                                          bundle:nil];
     UINavigationController *VC =
