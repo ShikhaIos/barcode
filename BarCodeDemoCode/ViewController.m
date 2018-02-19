@@ -147,7 +147,7 @@
     
     UIAlertAction *dismissAction = [UIAlertAction actionWithTitle:@"Dismiss"
                                                             style:UIAlertActionStyleDestructive handler:^(UIAlertAction * action) {
-                                                                [self dismissViewControllerAnimated:YES completion:nil];
+                                                               // [self dismissViewControllerAnimated:YES completion:nil];
                                                             }];
     
     //Add dismiss button to alert

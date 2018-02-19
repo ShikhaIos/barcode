@@ -15,7 +15,7 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Home-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
@@ -79,7 +79,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="N0I-FC-5Oy"/>
+                    <navigationItem key="navigationItem" title="Home" id="N0I-FC-5Oy"/>
                     <connections>
                         <outlet property="buttonScanCode" destination="M88-Xa-aEe" id="89M-Ca-7y3"/>
                         <outlet property="textfldData" destination="t8B-HY-DQD" id="QT1-MZ-RnP"/>
@@ -138,6 +138,26 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CKR-06-07Y">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product Details" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="faq-85-gZa">
+                                        <rect key="frame" x="105" y="15" width="165" height="34"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="21"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.75622679709999996" green="0.80610178880000005" blue="0.88105665190000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="faq-85-gZa" firstAttribute="top" secondItem="CKR-06-07Y" secondAttribute="top" constant="15" id="2Ea-Od-qFD"/>
+                                    <constraint firstAttribute="trailing" secondItem="faq-85-gZa" secondAttribute="trailing" constant="105" id="5LB-pb-5Ry"/>
+                                    <constraint firstItem="faq-85-gZa" firstAttribute="centerX" secondItem="CKR-06-07Y" secondAttribute="centerX" id="bVY-oK-gFq"/>
+                                    <constraint firstItem="faq-85-gZa" firstAttribute="leading" secondItem="CKR-06-07Y" secondAttribute="leading" constant="105" id="gX0-E2-Rzl"/>
+                                    <constraint firstAttribute="height" constant="64" id="iqS-Ek-1GQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="faq-85-gZa" secondAttribute="bottom" constant="15" id="tmv-3E-dZY"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -152,8 +172,11 @@
                             <constraint firstItem="axq-Za-XI4" firstAttribute="top" secondItem="wRd-OI-e02" secondAttribute="top" constant="99" id="Smy-gu-NuC"/>
                             <constraint firstItem="VUK-JP-MlJ" firstAttribute="leading" secondItem="uS8-Mo-I9Q" secondAttribute="leading" id="XM3-Tq-vz9"/>
                             <constraint firstItem="LnK-Xq-5zI" firstAttribute="top" secondItem="axq-Za-XI4" secondAttribute="bottom" constant="8" id="Zuy-Oi-I6S"/>
+                            <constraint firstItem="CKR-06-07Y" firstAttribute="top" secondItem="e9I-de-jfR" secondAttribute="top" id="bMT-xa-VWS"/>
+                            <constraint firstItem="CKR-06-07Y" firstAttribute="leading" secondItem="wRd-OI-e02" secondAttribute="leading" id="dPM-SY-uCA"/>
                             <constraint firstItem="axq-Za-XI4" firstAttribute="leading" secondItem="wRd-OI-e02" secondAttribute="leading" constant="57" id="iN4-pe-tzi"/>
                             <constraint firstItem="VUK-JP-MlJ" firstAttribute="width" secondItem="uS8-Mo-I9Q" secondAttribute="width" id="jMv-sI-r3b"/>
+                            <constraint firstItem="CKR-06-07Y" firstAttribute="trailing" secondItem="wRd-OI-e02" secondAttribute="trailing" id="ki8-5b-Dwu"/>
                             <constraint firstItem="LnK-Xq-5zI" firstAttribute="height" relation="greaterThanOrEqual" secondItem="axq-Za-XI4" secondAttribute="height" id="oF3-Ga-2Py"/>
                             <constraint firstItem="wRd-OI-e02" firstAttribute="bottom" secondItem="Jm8-9d-DW0" secondAttribute="bottom" constant="319" id="oiM-eQ-jkA"/>
                             <constraint firstItem="uS8-Mo-I9Q" firstAttribute="height" secondItem="LnK-Xq-5zI" secondAttribute="height" id="sXZ-Hd-ofF"/>
@@ -170,7 +193,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r43-om-13E" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1128.8" y="127.28635682158921"/>
+            <point key="canvasLocation" x="1102" y="127"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="3Om-Fo-hZU">
