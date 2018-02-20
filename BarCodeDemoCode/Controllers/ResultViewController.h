@@ -10,9 +10,7 @@
 #import "WebServicesResultModal.h"
 
 @interface ResultViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UILabel *labelElid;
-@property (weak, nonatomic) IBOutlet UILabel *labelEan;
-@property (weak, nonatomic) IBOutlet UILabel *labelBrand;
-@property (weak, nonatomic) IBOutlet UILabel *labelTitle;
-@property(weak,nonatomic) WebServicesResultModal * ResultModal;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+
+@property(strong,nonatomic) WebServicesResultModal * ResultModal;
 @end

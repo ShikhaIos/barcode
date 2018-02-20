@@ -7,8 +7,9 @@
 //
 
 #import "ResultViewController.h"
+#import "ResultTableViewCell.h"
 
-@interface ResultViewController ()
+@interface ResultViewController ()<UITableViewDataSource,UITableViewDelegate>
 
 @end
 
@@ -16,24 +17,38 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.labelTitle.text = [NSString stringWithFormat:@"Title: %@",self.ResultModal.title];
-    self.labelBrand.text = [NSString stringWithFormat:@"Brand: %@",self.ResultModal.brand];
-    self.labelEan.text = [NSString stringWithFormat:@"Serial Number: %@",self.ResultModal.elid];
-    self.labelElid.text = [NSString stringWithFormat:@"EAN: %@",self.ResultModal.ean];
+    self.title = @"Product Detail";
     
     // Do any additional setup after loading the view.
 }
-- (IBAction)backButtonPressed:(UIButton *)sender {
-
-    UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"Main"
-                                                         bundle:nil];
-    UINavigationController *VC =
-    [storyboard instantiateViewControllerWithIdentifier:@"MainVC"];
-    [self presentViewController:VC
-                       animated:YES
-                     completion:nil];
-    
+-(void)viewWillAppear:(BOOL)animated
+{
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [_tableView reloadData];
+    });
 }
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 1;
+}
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *simpleTableIdentifier = @"ResultTableViewCell";
+    ResultTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
+    if (cell == nil) {
+        cell = [[ResultTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
+    }
+      cell.backgroundColor = [UIColor greenColor];
+        cell.labelTitle.text = [NSString stringWithFormat:@"Title: %@",self.ResultModal.title];
+        cell.labelBrand.text = [NSString stringWithFormat:@"Brand: %@",self.ResultModal.brand];
+        cell.labelEan.text = [NSString stringWithFormat:@"EAN: %@",self.ResultModal.ean];
+        cell.labelElid.text = [NSString stringWithFormat:@"Serial Number: %@",self.ResultModal.elid];
+    return cell;
+}
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 350;
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

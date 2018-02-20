@@ -28,7 +28,6 @@
             
             NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:&erro ];
             
-            
             Modal *mobObj = [[Modal alloc]init];
             mobObj = [Modal parseJsonToResult:json];
             

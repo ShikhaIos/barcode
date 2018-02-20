@@ -32,6 +32,10 @@
 		A76B7534203579EB00FB1228 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A76B7533203579EB00FB1228 /* OpenGLES.framework */; };
 		A76B753720357A5500FB1228 /* ResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A76B753620357A5500FB1228 /* ResultViewController.m */; };
 		A76B753A20357A9A00FB1228 /* WebServicesResultModal.m in Sources */ = {isa = PBXBuildFile; fileRef = A76B753920357A9A00FB1228 /* WebServicesResultModal.m */; };
+		A7D5C1D6203B7B4B00FCE61B /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7D5C1D5203B7B4B00FCE61B /* SWRevealViewController.m */; };
+		A7D5C1D9203B7CFF00FCE61B /* SliderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7D5C1D8203B7CFF00FCE61B /* SliderViewController.m */; };
+		A7D5C1DD203B879400FCE61B /* SliderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A7D5C1DC203B879400FCE61B /* SliderTableViewCell.m */; };
+		A7D5C1E0203C29C000FCE61B /* ResultTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A7D5C1DF203C29C000FCE61B /* ResultTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +93,14 @@
 		A76B753620357A5500FB1228 /* ResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultViewController.m; sourceTree = "<group>"; };
 		A76B753820357A9A00FB1228 /* WebServicesResultModal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebServicesResultModal.h; sourceTree = "<group>"; };
 		A76B753920357A9A00FB1228 /* WebServicesResultModal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebServicesResultModal.m; sourceTree = "<group>"; };
+		A7D5C1D4203B7B4B00FCE61B /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = BarCodeDemoCode/SliderClass/SWRevealViewController.h; sourceTree = SOURCE_ROOT; };
+		A7D5C1D5203B7B4B00FCE61B /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = BarCodeDemoCode/SliderClass/SWRevealViewController.m; sourceTree = SOURCE_ROOT; };
+		A7D5C1D7203B7CFF00FCE61B /* SliderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SliderViewController.h; sourceTree = "<group>"; };
+		A7D5C1D8203B7CFF00FCE61B /* SliderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SliderViewController.m; sourceTree = "<group>"; };
+		A7D5C1DB203B879400FCE61B /* SliderTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SliderTableViewCell.h; sourceTree = "<group>"; };
+		A7D5C1DC203B879400FCE61B /* SliderTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SliderTableViewCell.m; sourceTree = "<group>"; };
+		A7D5C1DE203C29C000FCE61B /* ResultTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ResultTableViewCell.h; sourceTree = "<group>"; };
+		A7D5C1DF203C29C000FCE61B /* ResultTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ResultTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +144,8 @@
 		A76B74D62035780A00FB1228 = {
 			isa = PBXGroup;
 			children = (
+				A7D5C1DA203B877300FCE61B /* TableCell */,
+				A7D5C1D3203B7B1F00FCE61B /* SliderClass */,
 				A76B751A2035793000FB1228 /* ScanditBarcodeScanner.framework */,
 				A76B74E12035780A00FB1228 /* BarCodeDemoCode */,
 				A76B74FA2035780A00FB1228 /* BarCodeDemoCodeTests */,
@@ -223,6 +237,8 @@
 				A76B74E62035780A00FB1228 /* ViewController.m */,
 				A76B753520357A5500FB1228 /* ResultViewController.h */,
 				A76B753620357A5500FB1228 /* ResultViewController.m */,
+				A7D5C1D7203B7CFF00FCE61B /* SliderViewController.h */,
+				A7D5C1D8203B7CFF00FCE61B /* SliderViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -242,6 +258,26 @@
 				A76B75142035790400FB1228 /* Webservice.m */,
 			);
 			path = WebservicesClass;
+			sourceTree = "<group>";
+		};
+		A7D5C1D3203B7B1F00FCE61B /* SliderClass */ = {
+			isa = PBXGroup;
+			children = (
+				A7D5C1D4203B7B4B00FCE61B /* SWRevealViewController.h */,
+				A7D5C1D5203B7B4B00FCE61B /* SWRevealViewController.m */,
+			);
+			path = SliderClass;
+			sourceTree = "<group>";
+		};
+		A7D5C1DA203B877300FCE61B /* TableCell */ = {
+			isa = PBXGroup;
+			children = (
+				A7D5C1DB203B879400FCE61B /* SliderTableViewCell.h */,
+				A7D5C1DC203B879400FCE61B /* SliderTableViewCell.m */,
+				A7D5C1DE203C29C000FCE61B /* ResultTableViewCell.h */,
+				A7D5C1DF203C29C000FCE61B /* ResultTableViewCell.m */,
+			);
+			path = TableCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -311,7 +347,7 @@
 				TargetAttributes = {
 					A76B74DE2035780A00FB1228 = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					A76B74F62035780A00FB1228 = {
 						CreatedOnToolsVersion = 9.2;
@@ -380,9 +416,13 @@
 				A76B74E72035780A00FB1228 /* ViewController.m in Sources */,
 				A76B75192035790400FB1228 /* Modal.m in Sources */,
 				A76B74F22035780A00FB1228 /* main.m in Sources */,
+				A7D5C1D6203B7B4B00FCE61B /* SWRevealViewController.m in Sources */,
+				A7D5C1DD203B879400FCE61B /* SliderTableViewCell.m in Sources */,
 				A76B753A20357A9A00FB1228 /* WebServicesResultModal.m in Sources */,
 				A76B75182035790400FB1228 /* Webservice.m in Sources */,
 				A76B74E42035780A00FB1228 /* AppDelegate.m in Sources */,
+				A7D5C1E0203C29C000FCE61B /* ResultTableViewCell.m in Sources */,
+				A7D5C1D9203B7CFF00FCE61B /* SliderViewController.m in Sources */,
 				A76B753720357A5500FB1228 /* ResultViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -546,15 +586,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 2KAL3NND99;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = BarCodeDemoCode/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.barcode.id;
+				PRODUCT_BUNDLE_IDENTIFIER = com.a1distribute.barcode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "e71522c1-6486-4583-83b4-7852a46497e8";
+				PROVISIONING_PROFILE_SPECIFIER = Distribute_A1;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -563,15 +607,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 2KAL3NND99;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = BarCodeDemoCode/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.barcode.id;
+				PRODUCT_BUNDLE_IDENTIFIER = com.a1distribute.barcode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "e71522c1-6486-4583-83b4-7852a46497e8";
+				PROVISIONING_PROFILE_SPECIFIER = Distribute_A1;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
