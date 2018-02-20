@@ -32,10 +32,10 @@
 		A76B7534203579EB00FB1228 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A76B7533203579EB00FB1228 /* OpenGLES.framework */; };
 		A76B753720357A5500FB1228 /* ResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A76B753620357A5500FB1228 /* ResultViewController.m */; };
 		A76B753A20357A9A00FB1228 /* WebServicesResultModal.m in Sources */ = {isa = PBXBuildFile; fileRef = A76B753920357A9A00FB1228 /* WebServicesResultModal.m */; };
-		A7D5C1D6203B7B4B00FCE61B /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7D5C1D5203B7B4B00FCE61B /* SWRevealViewController.m */; };
 		A7D5C1D9203B7CFF00FCE61B /* SliderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7D5C1D8203B7CFF00FCE61B /* SliderViewController.m */; };
 		A7D5C1DD203B879400FCE61B /* SliderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A7D5C1DC203B879400FCE61B /* SliderTableViewCell.m */; };
 		A7D5C1E0203C29C000FCE61B /* ResultTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A7D5C1DF203C29C000FCE61B /* ResultTableViewCell.m */; };
+		A7D5C1E4203C8E3700FCE61B /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7D5C1E2203C8E3700FCE61B /* SWRevealViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,14 +93,14 @@
 		A76B753620357A5500FB1228 /* ResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultViewController.m; sourceTree = "<group>"; };
 		A76B753820357A9A00FB1228 /* WebServicesResultModal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebServicesResultModal.h; sourceTree = "<group>"; };
 		A76B753920357A9A00FB1228 /* WebServicesResultModal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebServicesResultModal.m; sourceTree = "<group>"; };
-		A7D5C1D4203B7B4B00FCE61B /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = BarCodeDemoCode/SliderClass/SWRevealViewController.h; sourceTree = SOURCE_ROOT; };
-		A7D5C1D5203B7B4B00FCE61B /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = BarCodeDemoCode/SliderClass/SWRevealViewController.m; sourceTree = SOURCE_ROOT; };
 		A7D5C1D7203B7CFF00FCE61B /* SliderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SliderViewController.h; sourceTree = "<group>"; };
 		A7D5C1D8203B7CFF00FCE61B /* SliderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SliderViewController.m; sourceTree = "<group>"; };
 		A7D5C1DB203B879400FCE61B /* SliderTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SliderTableViewCell.h; sourceTree = "<group>"; };
 		A7D5C1DC203B879400FCE61B /* SliderTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SliderTableViewCell.m; sourceTree = "<group>"; };
 		A7D5C1DE203C29C000FCE61B /* ResultTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ResultTableViewCell.h; sourceTree = "<group>"; };
 		A7D5C1DF203C29C000FCE61B /* ResultTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ResultTableViewCell.m; sourceTree = "<group>"; };
+		A7D5C1E2203C8E3700FCE61B /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		A7D5C1E3203C8E3700FCE61B /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,8 +144,8 @@
 		A76B74D62035780A00FB1228 = {
 			isa = PBXGroup;
 			children = (
+				A7D5C1E1203C8E0400FCE61B /* SliderClass */,
 				A7D5C1DA203B877300FCE61B /* TableCell */,
-				A7D5C1D3203B7B1F00FCE61B /* SliderClass */,
 				A76B751A2035793000FB1228 /* ScanditBarcodeScanner.framework */,
 				A76B74E12035780A00FB1228 /* BarCodeDemoCode */,
 				A76B74FA2035780A00FB1228 /* BarCodeDemoCodeTests */,
@@ -260,15 +260,6 @@
 			path = WebservicesClass;
 			sourceTree = "<group>";
 		};
-		A7D5C1D3203B7B1F00FCE61B /* SliderClass */ = {
-			isa = PBXGroup;
-			children = (
-				A7D5C1D4203B7B4B00FCE61B /* SWRevealViewController.h */,
-				A7D5C1D5203B7B4B00FCE61B /* SWRevealViewController.m */,
-			);
-			path = SliderClass;
-			sourceTree = "<group>";
-		};
 		A7D5C1DA203B877300FCE61B /* TableCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -278,6 +269,15 @@
 				A7D5C1DF203C29C000FCE61B /* ResultTableViewCell.m */,
 			);
 			path = TableCell;
+			sourceTree = "<group>";
+		};
+		A7D5C1E1203C8E0400FCE61B /* SliderClass */ = {
+			isa = PBXGroup;
+			children = (
+				A7D5C1E3203C8E3700FCE61B /* SWRevealViewController.h */,
+				A7D5C1E2203C8E3700FCE61B /* SWRevealViewController.m */,
+			);
+			path = SliderClass;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -416,12 +416,12 @@
 				A76B74E72035780A00FB1228 /* ViewController.m in Sources */,
 				A76B75192035790400FB1228 /* Modal.m in Sources */,
 				A76B74F22035780A00FB1228 /* main.m in Sources */,
-				A7D5C1D6203B7B4B00FCE61B /* SWRevealViewController.m in Sources */,
 				A7D5C1DD203B879400FCE61B /* SliderTableViewCell.m in Sources */,
 				A76B753A20357A9A00FB1228 /* WebServicesResultModal.m in Sources */,
 				A76B75182035790400FB1228 /* Webservice.m in Sources */,
 				A76B74E42035780A00FB1228 /* AppDelegate.m in Sources */,
 				A7D5C1E0203C29C000FCE61B /* ResultTableViewCell.m in Sources */,
+				A7D5C1E4203C8E3700FCE61B /* SWRevealViewController.m in Sources */,
 				A7D5C1D9203B7CFF00FCE61B /* SliderViewController.m in Sources */,
 				A76B753720357A5500FB1228 /* ResultViewController.m in Sources */,
 			);
