@@ -9,8 +9,8 @@
 #import "SliderViewController.h"
 #import "SliderTableViewCell.h"
 #import <ScanditBarcodeScanner/ScanditBarcodeScanner.h>
-
-@interface SliderViewController ()<UITableViewDelegate,UITableViewDataSource,SBSScanDelegate,ViewControllerClassDelegate>
+#import "AppDelegate.h"
+@interface SliderViewController ()<UITableViewDelegate,UITableViewDataSource,SBSScanDelegate>
 @property (nonatomic, strong, nullable) SBSBarcodePicker *picker;
 @end
 
@@ -23,12 +23,12 @@
     [super viewDidLoad];
     tableData = [NSArray arrayWithObjects:@"ScanBarCode", @"EnterBarCode", nil];
     self.tableVw.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
-
-
+    
+    
     // Do any additional setup after loading the view.
 }
 
-    
+
 
 
 - (void)didReceiveMemoryWarning {
@@ -98,49 +98,61 @@
         [self.picker.overlayController setCameraSwitchVisibility:SBSCameraSwitchVisibilityOnTablet];
         [self.picker setAllowedInterfaceOrientations:UIInterfaceOrientationMaskAll];
         self.picker.scanDelegate = self;
+        [self.picker.overlayController showToolBar:YES];
+        self.picker.overlayController.cancelDelegate = self;
+
         [self.picker startScanning];
         [self presentViewController:self.picker animated:YES completion:nil];
     }
     else
     {
-     [self performSegueWithIdentifier:@"barcode" sender:self];
-}
+        [self performSegueWithIdentifier:@"barcode" sender:self];
+    }
 }
 #pragma mark - SBSBarCodeScannerDelegate
 
-    - (void)barcodePicker:(SBSBarcodePicker *)thePicker didScan:(SBSScanSession *)session {
-        [session stopScanning];
-        SBSCode *code = [session.newlyRecognizedCodes objectAtIndex:0];
-        dispatch_async(dispatch_get_main_queue(), ^{
-            NSString *symbology = code.symbologyString;
-            NSString *barcode = code.data;
-            self.strValuetoPass = barcode;
-
-            [self dismissViewControllerAnimated:YES completion:nil];
-            // UIAlertController
-            UIAlertController *alert = [UIAlertController alertControllerWithTitle:[NSString stringWithFormat:@"Scanned %@", symbology] message:barcode preferredStyle:UIAlertControllerStyleAlert];
-            UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"Ok" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {
-                [self.delegate didReceiveValue:_strValuetoPass];
-               [self.revealViewController revealToggleAnimated:YES];
-                
-            }];
-            [alert  addAction:okAction];
-            [self presentViewController:alert animated:YES completion:nil];
-            
-        });
+- (void)barcodePicker:(SBSBarcodePicker *)thePicker didScan:(SBSScanSession *)session {
+    [session stopScanning];
+    SBSCode *code = [session.newlyRecognizedCodes objectAtIndex:0];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        NSString *symbology = code.symbologyString;
+        NSString *barcode = code.data;
+        self.strValuetoPass = barcode;
         
-    }
-
+        [self dismissViewControllerAnimated:YES completion:nil];
+        // UIAlertController
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:[NSString stringWithFormat:@"Scanned %@", symbology] message:barcode preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"Ok" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {
+            
+            AppDelegate *obj_appdelegate = (AppDelegate*)[[UIApplication sharedApplication]delegate];
+            obj_appdelegate.scannedValue = self.strValuetoPass;
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"CaptureComplete" object:_strValuetoPass];
+            
+            //[self.delegate didReceiveValue:_strValuetoPass];
+            [self.revealViewController revealToggleAnimated:YES];
+            
+        }];
+        [alert  addAction:okAction];
+        [self presentViewController:alert animated:YES completion:nil];
+        
+    });
+    
+}
+- (void) overlayController:(nonnull SBSOverlayController *)overlayController didCancelWithStatus:(nullable NSDictionary *)status
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
 }
 /*
-#pragma mark - Navigation
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-    
 @end
+

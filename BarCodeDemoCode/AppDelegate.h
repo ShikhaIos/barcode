@@ -16,6 +16,7 @@
 
 @property (readonly, strong) NSPersistentContainer *persistentContainer;
 
+@property(strong,nonatomic) NSString *scannedValue;
 - (void)saveContext;
 
 

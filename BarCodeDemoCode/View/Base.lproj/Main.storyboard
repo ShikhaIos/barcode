@@ -233,12 +233,12 @@
                                                 <constraint firstItem="Hs6-wB-dSG" firstAttribute="top" secondItem="S4M-mD-9tE" secondAttribute="bottom" constant="8" id="Sj5-nY-t2y"/>
                                                 <constraint firstItem="1T4-Bb-cLJ" firstAttribute="top" secondItem="cPg-Cy-5zt" secondAttribute="bottom" constant="8" id="Snw-xD-Qch"/>
                                                 <constraint firstItem="cPg-Cy-5zt" firstAttribute="leading" secondItem="ONs-1m-8d0" secondAttribute="leading" constant="28" id="bGq-Ck-ejG"/>
-                                                <constraint firstItem="S4M-mD-9tE" firstAttribute="height" secondItem="1T4-Bb-cLJ" secondAttribute="height" id="gpQ-Na-e1b"/>
-                                                <constraint firstItem="1T4-Bb-cLJ" firstAttribute="height" secondItem="cPg-Cy-5zt" secondAttribute="height" id="h1Z-xD-N7G"/>
+                                                <constraint firstItem="S4M-mD-9tE" firstAttribute="height" relation="greaterThanOrEqual" secondItem="1T4-Bb-cLJ" secondAttribute="height" id="gpQ-Na-e1b"/>
+                                                <constraint firstItem="1T4-Bb-cLJ" firstAttribute="height" relation="greaterThanOrEqual" secondItem="cPg-Cy-5zt" secondAttribute="height" id="h1Z-xD-N7G"/>
                                                 <constraint firstItem="S4M-mD-9tE" firstAttribute="top" secondItem="1T4-Bb-cLJ" secondAttribute="bottom" constant="8" id="hzC-zl-A69"/>
                                                 <constraint firstItem="1T4-Bb-cLJ" firstAttribute="width" secondItem="cPg-Cy-5zt" secondAttribute="width" id="iB1-Ag-qWu"/>
                                                 <constraint firstItem="Hs6-wB-dSG" firstAttribute="leading" secondItem="S4M-mD-9tE" secondAttribute="leading" id="lIR-Sr-hsm"/>
-                                                <constraint firstItem="Hs6-wB-dSG" firstAttribute="height" secondItem="S4M-mD-9tE" secondAttribute="height" id="n04-Tl-gYY"/>
+                                                <constraint firstItem="Hs6-wB-dSG" firstAttribute="height" relation="greaterThanOrEqual" secondItem="S4M-mD-9tE" secondAttribute="height" id="n04-Tl-gYY"/>
                                                 <constraint firstItem="1T4-Bb-cLJ" firstAttribute="leading" secondItem="cPg-Cy-5zt" secondAttribute="leading" id="rmZ-3i-rz4"/>
                                             </constraints>
                                         </tableViewCellContentView>

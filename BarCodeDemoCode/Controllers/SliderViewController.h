@@ -8,13 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "ViewController.h"
-@protocol ViewControllerClassDelegate
-- (void)didReceiveValue:(NSString *)value;
 
-@end
 
 @interface SliderViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UITableView *tableVw;
-@property (nonatomic, weak) id <ViewControllerClassDelegate> delegate;
 @property(strong,nonatomic) NSString *strValuetoPass;
 @end

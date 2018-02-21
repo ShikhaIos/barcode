@@ -46,7 +46,7 @@
     return cell;
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 350;
+    return 400;
 }
 
 - (void)didReceiveMemoryWarning {
