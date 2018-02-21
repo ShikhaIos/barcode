@@ -10,9 +10,9 @@
 #import "Webservice.h"
 #import "ResultViewController.h"
 #import "WebServicesResultModal.h"
+#import "SliderViewController.h"
 
-
-@interface ViewController () <SBSScanDelegate,WebservicesClassDelegate,UITextFieldDelegate,SWRevealViewControllerDelegate>
+@interface ViewController () <SBSScanDelegate,WebservicesClassDelegate,UITextFieldDelegate,SWRevealViewControllerDelegate,ViewControllerClassDelegate>
 
 @property (nonatomic, strong, nullable) SBSBarcodePicker *picker;
 
@@ -24,7 +24,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.textfldData.text = _strValue;
     SWRevealViewController *revealViewController = self.revealViewController;
     if ( revealViewController )
     {
@@ -35,11 +34,18 @@
     // Do any additional setup after loading the view, typically from a nib.
     
 }
-
+-(void) didReceiveValue:(NSString *)value
+{
+    _strValue = value;
+}
 -(void) viewWillAppear:(BOOL)animated
 {
-    self.textfldData.text = @"";
+    dispatch_async(dispatch_get_main_queue(), ^{
+       self.textfldData.text = _strValue;
+    });
+    
 }
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

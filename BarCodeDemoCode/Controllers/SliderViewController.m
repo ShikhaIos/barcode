@@ -10,9 +10,8 @@
 #import "SliderTableViewCell.h"
 #import <ScanditBarcodeScanner/ScanditBarcodeScanner.h>
 
-@interface SliderViewController ()<UITableViewDelegate,UITableViewDataSource,SBSScanDelegate>
+@interface SliderViewController ()<UITableViewDelegate,UITableViewDataSource,SBSScanDelegate,ViewControllerClassDelegate>
 @property (nonatomic, strong, nullable) SBSBarcodePicker *picker;
-@property (strong,nonatomic) ViewController *obj;
 @end
 
 @implementation SliderViewController
@@ -29,10 +28,14 @@
     // Do any additional setup after loading the view.
 }
 
+    
+
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 #pragma mark - TableViewDataSourceAndDelegate
 -(void)viewDidLayoutSubviews
 {
@@ -111,11 +114,16 @@
         dispatch_async(dispatch_get_main_queue(), ^{
             NSString *symbology = code.symbologyString;
             NSString *barcode = code.data;
-            self.obj.strValue = symbology;
+            self.strValuetoPass = barcode;
+
             [self dismissViewControllerAnimated:YES completion:nil];
             // UIAlertController
             UIAlertController *alert = [UIAlertController alertControllerWithTitle:[NSString stringWithFormat:@"Scanned %@", symbology] message:barcode preferredStyle:UIAlertControllerStyleAlert];
-            UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"Ok" style:UIAlertActionStyleDefault handler:nil ];
+            UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"Ok" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {
+                [self.delegate didReceiveValue:_strValuetoPass];
+               [self.revealViewController revealToggleAnimated:YES];
+                
+            }];
             [alert  addAction:okAction];
             [self presentViewController:alert animated:YES completion:nil];
             

@@ -10,11 +10,11 @@
 #import <ScanditBarcodeScanner/ScanditBarcodeScanner.h>
 #import "SWRevealViewController.h"
 
+
 @interface ViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *menuButton;
 @property (weak, nonatomic) IBOutlet UITextField *textfldData;
 @property(strong,nonatomic) NSString *strValue;
-
 
 @end
 
