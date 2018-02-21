@@ -10,7 +10,7 @@
 #import "SliderTableViewCell.h"
 #import <ScanditBarcodeScanner/ScanditBarcodeScanner.h>
 #import "AppDelegate.h"
-@interface SliderViewController ()<UITableViewDelegate,UITableViewDataSource,SBSScanDelegate>
+@interface SliderViewController ()<UITableViewDelegate,UITableViewDataSource,SBSScanDelegate,SBSOverlayControllerDidCancelDelegate>
 @property (nonatomic, strong, nullable) SBSBarcodePicker *picker;
 @end
 
@@ -27,9 +27,6 @@
     
     // Do any additional setup after loading the view.
 }
-
-
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -127,8 +124,6 @@
             AppDelegate *obj_appdelegate = (AppDelegate*)[[UIApplication sharedApplication]delegate];
             obj_appdelegate.scannedValue = self.strValuetoPass;
             [[NSNotificationCenter defaultCenter] postNotificationName:@"CaptureComplete" object:_strValuetoPass];
-            
-            //[self.delegate didReceiveValue:_strValuetoPass];
             [self.revealViewController revealToggleAnimated:YES];
             
         }];
@@ -142,8 +137,7 @@
 {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-}
+
 /*
  #pragma mark - Navigation
  

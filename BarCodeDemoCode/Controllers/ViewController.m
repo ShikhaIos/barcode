@@ -43,17 +43,6 @@
     });
 }
 
--(void) didReceiveValue:(NSString *)value
-{
-    _strValue = value;
-}
--(void) viewWillAppear:(BOOL)animated
-{
-    //    dispatch_async(dispatch_get_main_queue(), ^{
-    //       self.textfldData.text = _strValue;
-    //    });
-}
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -72,7 +61,7 @@
         dispatch_sync(dispatch_get_main_queue(),^{
             resultVC.ResultModal = modObj;
             [self.navigationController pushViewController:resultVC animated:true];
-            //[self.navigationController presentViewController:resultVC animated:true completion:nil];
+            
         });
     }
 }
@@ -96,7 +85,7 @@
     }
 }
 
-
+#pragma mark - AlertMethod
 -(void)showAlert:(NSString *)title withMessage:(NSString *)message {
     UIAlertController *controller = [UIAlertController alertControllerWithTitle: @"Here is problem!"
                                                                         message: message
@@ -106,7 +95,6 @@
                                                                 self.textfldData.text = @ "";
                                                                 
                                                             }];
-    //Add dismiss button to alert
     [controller addAction:dismissAction];
     [self presentViewController: controller animated: YES completion: nil];
 }
